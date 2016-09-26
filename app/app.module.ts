@@ -7,10 +7,11 @@ import {TriangleComponent } from './triangle.component';
 import {NavComponent } from './nav.component';
 import { AppComponent }  from './app.component';
 import {routing} from './app.routing';
+import { SearchComponent } from './search.component';
 
 @NgModule({
   imports: [ BrowserModule, routing ],
-  declarations: [ AppComponent, CircleComponent, TriangleComponent, SquareComponent, NavComponent],
-  bootstrap: [ AppComponent, NavComponent ]
+  declarations: [ AppComponent, CircleComponent, TriangleComponent, SquareComponent, NavComponent, SearchComponent],
+  bootstrap: [ AppComponent, NavComponent, SearchComponent ]
 })
 export class AppModule { }

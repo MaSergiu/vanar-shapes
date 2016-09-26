@@ -16,14 +16,15 @@ var triangle_component_1 = require('./triangle.component');
 var nav_component_1 = require('./nav.component');
 var app_component_1 = require('./app.component');
 var app_routing_1 = require('./app.routing');
+var search_component_1 = require('./search.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent, circle_component_1.CircleComponent, triangle_component_1.TriangleComponent, square_component_1.SquareComponent, nav_component_1.NavComponent],
-            bootstrap: [app_component_1.AppComponent, nav_component_1.NavComponent]
+            declarations: [app_component_1.AppComponent, circle_component_1.CircleComponent, triangle_component_1.TriangleComponent, square_component_1.SquareComponent, nav_component_1.NavComponent, search_component_1.SearchComponent],
+            bootstrap: [app_component_1.AppComponent, nav_component_1.NavComponent, search_component_1.SearchComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

@@ -11,19 +11,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var CircleComponent = (function () {
     function CircleComponent() {
+        this.diameter = 100;
         //sozdati lichnie svoistva
         this.shape_code = "\n    <div style=\"background:red;width:100px;height:100px;border-radius:100%\"></div>\n    ";
     }
     //function reacte on click on CREATE
     CircleComponent.prototype.onCreate = function () {
         //alert('OK');
-        document.getElementsByClassName('shape')[0].innerHTML = this.shape_code;
+        //document.getElementsByClassName('shape')[0].innerHTML = this.shape_code;
+        jQuery('.shape').html(this.shape_code);
         return false;
     };
     CircleComponent = __decorate([
         core_1.Component({
             //selector: 'my-app',
-            template: "\n    <div class=\"jumbotron\">\n      <h1>Circle</h1>\n\n      <p><a (click) =\"onCreate()\" class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Create</a></p>\n<div class='shape'></div>\n    </div>\n    "
+            template: "\n    <div class=\"jumbotron\">\n      <h1>Circle</h1>\n      <p><a (click) =\"onCreate()\" class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Create</a></p>\n\n      <form>\n        <div class=\"form-group\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"Diameter in px\" value=\"100px\">\n        </div>\n      </form>\n\n      <div class='shape'></div>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], CircleComponent);

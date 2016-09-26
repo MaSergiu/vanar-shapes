@@ -9,17 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var Search = (function () {
-    function Search() {
+var SearchComponent = (function () {
+    function SearchComponent() {
+        this.words = ['Circle', 'Triangle', 'Square'];
     }
-    Search = __decorate([
+    SearchComponent.prototype.onSubmit = function () {
+        var keyword = jQuery('#search-form input').val();
+        for (var i in this.words) {
+            if (this.words[i].search(keyword) != -1) {
+                alert(this.words[i]);
+            }
+        }
+        return false;
+    };
+    SearchComponent = __decorate([
         core_1.Component({
-            selector: '.search',
-            template: "\n  <form class=\"navbar-form navbar-left\">\n    <div class=\"form-group\">\n      <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-default\">Submit</button>\n  </form>\n  "
+            selector: '#search-form',
+            template: "\n  <form class=\"navbar-form navbar-left\">\n    <div class=\"form-group\">\n      <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-default\" (click)=\"onSubmit()\">Submit</button>\n  </form>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], Search);
-    return Search;
+    ], SearchComponent);
+    return SearchComponent;
 }());
-exports.Search = Search;
+exports.SearchComponent = SearchComponent;
 //# sourceMappingURL=search.component.js.map
