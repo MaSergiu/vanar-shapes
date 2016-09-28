@@ -18,7 +18,7 @@ var TriangleComponent = (function () {
     TriangleComponent = __decorate([
         core_1.Component({
             //selector: 'my-app',
-            template: "\n    <div class=\"jumbotron\">\n      <h1>Square</h1>\n\n      <p><a (click) =\"onCreate()\" class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Create</a></p>\n    </div>\n    "
+            template: "\n        <div class=\"jumbotron\">\n            <h1>Square</h1>\n            \n            <p><a (click) =\"onCreate()\" class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Create</a></p>\n        </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], TriangleComponent);

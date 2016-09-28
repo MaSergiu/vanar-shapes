@@ -25,7 +25,7 @@ var SearchComponent = (function () {
     SearchComponent = __decorate([
         core_1.Component({
             selector: '#search-form',
-            template: "\n  <form class=\"navbar-form navbar-left\">\n    <div class=\"form-group\">\n      <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n    </div>\n    <button type=\"submit\" class=\"btn btn-default\" (click)=\"onSubmit()\">Submit</button>\n  </form>\n  "
+            template: "\n        <form class=\"navbar-form navbar-left\">\n            <div class=\"form-group\">\n              <input type=\"text\" class=\"form-control\" placeholder=\"Search\">\n            </div>\n            <button type=\"submit\" class=\"btn btn-default\" (click)=\"onSubmit()\">Submit</button>\n        </form>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], SearchComponent);

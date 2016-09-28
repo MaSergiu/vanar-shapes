@@ -8,10 +8,13 @@ import {NavComponent } from './nav.component';
 import { AppComponent }  from './app.component';
 import {routing} from './app.routing';
 import { SearchComponent } from './search.component';
+import { LanguageComponent } from './language.component';
 
 @NgModule({
   imports: [ BrowserModule, routing ],
-  declarations: [ AppComponent, CircleComponent, TriangleComponent, SquareComponent, NavComponent, SearchComponent],
-  bootstrap: [ AppComponent, NavComponent, SearchComponent ]
+  declarations: [
+      AppComponent, CircleComponent, TriangleComponent, SquareComponent, NavComponent, SearchComponent, LanguageComponent
+  ],
+  bootstrap: [ AppComponent, NavComponent, SearchComponent, LanguageComponent ]
 })
 export class AppModule { }

@@ -9,21 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var SquareComponent = (function () {
-    function SquareComponent() {
+var LanguageComponent = (function () {
+    function LanguageComponent() {
+        this.languageCodes = ['Romanian', 'English', 'Russian'];
     }
-    SquareComponent.prototype.onCreate = function () {
-        alert('OK');
-        //jQuery('body').remove();
+    LanguageComponent.prototype.onChange = function () {
     };
-    SquareComponent = __decorate([
+    LanguageComponent = __decorate([
         core_1.Component({
-            //selector: 'my-app',
-            template: "\n        <div class=\"jumbotron\">\n            <h1>Square</h1>\n            \n            <p><a (click) =\"onCreate()\" class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Create</a></p>\n            <div class='shape'></div>\n        </div>\n    "
+            selector: '.language',
+            template: "\n        <ul class=\"nav navbar-nav navbar-right\">\n            <li><a href=\"#\" (click)=\"onChange()\" >Ro<span class=\"sr-only\">(current)</span></a></li>\n            <li><a href=\"#\" (click)=\"onChange()\" >En</a></li>\n            <li><a href=\"#\" (click)=\"onChange()\" >Ru</a></li>\n        </ul>\n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], SquareComponent);
-    return SquareComponent;
+    ], LanguageComponent);
+    return LanguageComponent;
 }());
-exports.SquareComponent = SquareComponent;
-//# sourceMappingURL=square.component.js.map
+exports.LanguageComponent = LanguageComponent;
+//# sourceMappingURL=language.component.js.map

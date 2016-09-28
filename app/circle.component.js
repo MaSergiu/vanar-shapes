@@ -25,7 +25,7 @@ var CircleComponent = (function () {
     CircleComponent = __decorate([
         core_1.Component({
             //selector: 'my-app',
-            template: "\n    <div class=\"jumbotron\">\n      <h1>Circle</h1>\n      <p><a (click) =\"onCreate()\" class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Create</a></p>\n\n      <form>\n        <div class=\"form-group\">\n          <input type=\"text\" class=\"form-control\" placeholder=\"Diameter in px\" value=\"100px\">\n        </div>\n      </form>\n\n      <div class='shape'></div>\n    </div>\n    "
+            template: "\n    <div class=\"jumbotron\">\n        <h1>Circle</h1>\n        <p><a (click) =\"onCreate()\" class=\"btn btn-primary btn-lg\" href=\"#\" role=\"button\">Create</a></p>\n\n        <form>\n            <div class=\"form-group\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Diameter in px\" value=\"100px\">\n            </div>\n        </form>\n\n        <div class='shape'></div>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], CircleComponent);
